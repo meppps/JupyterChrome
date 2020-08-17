@@ -1,7 +1,8 @@
 {
-  "manifest_version": 2,
-  "name": "Jupyter Notebook Theme",
-  "version": "0.1",
+  "name": "Jupyter Notebook Themes",
+  "version": "1.0",
+  "description": "Make your Jupyter notebooks more attractive while you code.",
+  "permissions": ["storage"],
   "background": {
     "scripts": ["background.js"]
   },
@@ -13,7 +14,12 @@
       "js": ["content.js"]
     }
   ],
-  "browser_action": {
-    "default_icon": "woozy.png"
-  }
+  "icons": {
+    "16": "img/jupiter16.png",
+    "128": "img/jupiter128.png"
+  }, 
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
 }
